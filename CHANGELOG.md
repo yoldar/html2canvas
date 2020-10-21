@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/niklasvh/html2canvas/compare/v1.0.0-rc.7...v1.0.0) (2020-10-21)
+
+
+### Features
+
+* Костыль для чека ([5476532](https://github.com/niklasvh/html2canvas/commit/5476532c9e25187060718c1ca723f5a3d61f4172))
+
 # [1.0.0-rc.7](https://github.com/niklasvh/html2canvas/compare/v1.0.0-rc.6...v1.0.0-rc.7) (2020-08-09)
 
 
