@@ -170,6 +170,8 @@ export class CanvasRenderer {
     }
 
     async renderTextNode(text: TextContainer, styles: CSSParsedDeclaration) {
+        // Костыль
+        styles.color = 222;
         const [font, fontFamily, fontSize] = this.createFontStyle(styles);
 
         this.ctx.font = font;
@@ -629,6 +631,8 @@ export class CanvasRenderer {
 
     async renderBorder(color: Color, side: number, curvePoints: BoundCurves) {
         this.path(parsePathForBorder(curvePoints, side));
+        // Костыль
+        color = 222;
         this.ctx.fillStyle = asString(color);
         this.ctx.fill();
     }
