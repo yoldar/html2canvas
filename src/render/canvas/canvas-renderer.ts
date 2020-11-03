@@ -640,6 +640,7 @@ export class CanvasRenderer {
     async renderNodeBackgroundAndBorders(paint: ElementPaint) {
         this.applyEffects(paint.effects, EffectTarget.BACKGROUND_BORDERS);
         const styles = paint.container.styles;
+        styles.backgroundColor = 0;
         const hasBackground = !isTransparent(styles.backgroundColor) || styles.backgroundImage.length;
 
         const borders = [

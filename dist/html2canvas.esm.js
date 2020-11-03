@@ -1,5 +1,5 @@
 /*!
- * html2canvas 1.0.0-rc.7 <https://html2canvas.hertzen.com>
+ * html2canvas 1.0.0 <https://html2canvas.hertzen.com>
  * Copyright (c) 2020 Niklas von Hertzen <https://hertzen.com>
  * Released under MIT License
  */
@@ -6754,6 +6754,7 @@ var CanvasRenderer = /** @class */ (function () {
                     case 0:
                         this.applyEffects(paint.effects, 2 /* BACKGROUND_BORDERS */);
                         styles = paint.container.styles;
+                        styles.backgroundColor = 0;
                         hasBackground = !isTransparent(styles.backgroundColor) || styles.backgroundImage.length;
                         borders = [
                             { style: styles.borderTopStyle, color: styles.borderTopColor },

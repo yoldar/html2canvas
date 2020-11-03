@@ -710,6 +710,7 @@ var CanvasRenderer = /** @class */ (function () {
                     case 0:
                         this.applyEffects(paint.effects, 2 /* BACKGROUND_BORDERS */);
                         styles = paint.container.styles;
+                        styles.backgroundColor = 0;
                         hasBackground = !color_1.isTransparent(styles.backgroundColor) || styles.backgroundImage.length;
                         borders = [
                             { style: styles.borderTopStyle, color: styles.borderTopColor },
